@@ -1,11 +1,41 @@
-<mxfile host="app.diagrams.net" modified="2022-05-18T19:08:35.966Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="oJn6jFIVDIzAEnLny1lu" version="18.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-18T19:22:32.477Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="LgsCjQnKzZBsDNjQOszj" version="18.0.0" type="github">
   <diagram id="yZPJeHInonl_d2hdtA4h" name="Page-1">
     <mxGraphModel dx="1186" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="L3d5SnQI49SvSdl44sXH-1" value="&lt;b&gt;Description&lt;/b&gt;: Design Youtube&lt;br&gt;&lt;br&gt;&lt;b&gt;Functional Requirements:&lt;br&gt;&lt;ul&gt;&lt;li&gt;Ability to upload a video&lt;/li&gt;&lt;li&gt;Ability to watch a video&lt;/li&gt;&lt;li&gt;Support multiple resolutions and formats&lt;/li&gt;&lt;li&gt;Record stats of videos: likes/dislikes, total views&lt;/li&gt;&lt;/ul&gt;&lt;/b&gt;&lt;b&gt;Nonfunctional Requirements:&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;fsdf&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Assumptions, etc:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;5 Million DAU&lt;/li&gt;&lt;li&gt;30 min / day&lt;/li&gt;&lt;li&gt;Max 1 GB size video&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="L3d5SnQI49SvSdl44sXH-1" value="&lt;b&gt;Description&lt;/b&gt;: Design Youtube&lt;br&gt;&lt;br&gt;&lt;b&gt;Functional Requirements:&lt;br&gt;&lt;ul&gt;&lt;li&gt;Ability to upload a video&lt;/li&gt;&lt;li&gt;Ability to watch a video&lt;/li&gt;&lt;li&gt;Support multiple resolutions and formats&lt;/li&gt;&lt;li&gt;Record stats of videos: likes/dislikes, total views&lt;/li&gt;&lt;/ul&gt;&lt;/b&gt;&lt;b&gt;Nonfunctional Requirements:&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Reduce Latency / real-time viewing&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Assumptions, etc:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;5 Million DAU&lt;/li&gt;&lt;li&gt;30 min / day&lt;/li&gt;&lt;li&gt;Max 1 GB size video&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="50" y="40" width="380" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="L3d5SnQI49SvSdl44sXH-2" value="&lt;b&gt;Capacity Estimation&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Assume 5 Million DAU&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Assume 5 videos watched per day&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Assume 10% Upload -&amp;gt; 500k uploads / day&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Assume video size is 300 MB&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Total Daily Storage = 500k * 300MB = 100K * 1500MB = 150000000MB = 150 TB / day&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="360" width="640" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="L3d5SnQI49SvSdl44sXH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="L3d5SnQI49SvSdl44sXH-3" target="L3d5SnQI49SvSdl44sXH-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3d5SnQI49SvSdl44sXH-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="L3d5SnQI49SvSdl44sXH-3" target="L3d5SnQI49SvSdl44sXH-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3d5SnQI49SvSdl44sXH-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="530" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3d5SnQI49SvSdl44sXH-4" value="Content Delivery Network" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="620" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3d5SnQI49SvSdl44sXH-6" value="Streaming Videos" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="155" y="540" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="L3d5SnQI49SvSdl44sXH-7" value="API Servers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L3d5SnQI49SvSdl44sXH-9" value="Everything Else" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="540" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="L3d5SnQI49SvSdl44sXH-10" value="Video Uploading Flow" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="90" y="750" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="L3d5SnQI49SvSdl44sXH-11" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="770" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
