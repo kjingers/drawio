@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-18T12:41:36.662Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="nDuuPc5qU5pXLQgOtVlT" version="18.0.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-05-18T14:28:19.220Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="aralaNR3oWonwBbU63aL" version="18.0.0" type="github" pages="2">
   <diagram id="f9oOYvCmZmpLSwxa6qJj" name="Page-1">
     <mxGraphModel dx="1186" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -37,7 +37,7 @@
             <mxPoint x="180" y="428" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iFM6vxmwz-QQAYS7bez4-9" value="Chat Servers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-9" value="Chat Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="305" y="390" width="85" height="50" as="geometry" />
         </mxCell>
         <mxCell id="iFM6vxmwz-QQAYS7bez4-12" value="Send Msg A" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
@@ -58,11 +58,105 @@
             <mxPoint x="410" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iFM6vxmwz-QQAYS7bez4-21" value="&lt;ul&gt;&lt;li&gt;User connected to same server&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="20" y="520" width="240" height="110" as="geometry" />
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-21" value="&lt;div&gt;Component Design Topics&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Message Handling:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;How send/receive Flow?&lt;/li&gt;&lt;li&gt;&amp;nbsp;Push vs Pull? Protocol to use?&lt;/li&gt;&lt;li&gt;How to keep track of which chat servers each user / group connected to&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Storing and Retrieving Messages from DB:&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;How message are loaded onto client when client comes online&lt;/li&gt;&lt;li&gt;DB Type to use&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Managing User Status / Presence&lt;/li&gt;&lt;ul&gt;&lt;li&gt;How to keep update user status to online / offline&lt;/li&gt;&lt;li&gt;How to notify relevant users of status change&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="580" width="660" height="110" as="geometry" />
         </mxCell>
         <mxCell id="iFM6vxmwz-QQAYS7bez4-22" value="HIGH Level" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="305" y="340" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-23" value="Stateless Portion" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="265" y="870" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-24" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="900" width="20" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-26" target="iFM6vxmwz-QQAYS7bez4-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-26" target="iFM6vxmwz-QQAYS7bez4-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-26" target="iFM6vxmwz-QQAYS7bez4-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-26" value="Load Balancer" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="290" y="990" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-27" value="Service Discovery" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1080" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-28" value="Authentication Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1080" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-29" value="Group Management" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1080" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-30" value="User Profile" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="1080" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-43" value="message" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1340" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-45" value="message_id&lt;br&gt;message_from&lt;br&gt;message_to&lt;br&gt;content&lt;br&gt;created_at" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="iFM6vxmwz-QQAYS7bez4-43">
+          <mxGeometry y="30" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-47" value="Can prob skip over most of this. Just highlight that there is a stateless portion that uses HTTP." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="840" width="310" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-48" value="Serivce Discovery can have API endpoint where client can get a list of DNS hostnames of chat servers that client could connect to. Apache Zookeeper&amp;nbsp;&lt;br&gt;&lt;ul&gt;&lt;li&gt;Registers all available chat servers and picks the best chat server for a client based on predefined criteria&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1180" width="440" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-49" value="Realtime Chat Servers and realtime Presense servers. When user logs in, status is stored in KV store. SImilar flow for logout.&lt;br&gt;&lt;br&gt;Disconnection is tricky. Use heartbeat is a good solution. If presense receive heartbeat with certain amount of time, then user still onine.&lt;br&gt;&lt;br&gt;Users who want to know status of a certain user s done with publish-subscribe model.&lt;br&gt;&lt;br&gt;This is good for smaller number of users (groups capped to 500), but breaks with a ton of users." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="305" y="1320" width="405" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-50" target="iFM6vxmwz-QQAYS7bez4-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-50" target="iFM6vxmwz-QQAYS7bez4-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-50" target="iFM6vxmwz-QQAYS7bez4-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-50" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="325" y="1530" width="25" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.588;entryY=-0.067;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-52" target="iFM6vxmwz-QQAYS7bez4-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-52" value="Load Balancer" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1610" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="1760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-53" target="iFM6vxmwz-QQAYS7bez4-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-53" target="iFM6vxmwz-QQAYS7bez4-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-53" value="API Servers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1730" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-55" value="Notification Service" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1725" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-57" value="Chat Servers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1610" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-58" value="Presence Servers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1610" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-64" value="WebSocket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1540" width="80" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
