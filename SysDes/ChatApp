@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2022-05-18T14:28:19.220Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="aralaNR3oWonwBbU63aL" version="18.0.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-05-18T14:36:50.124Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="zFTw43VPjoZqx-UHJNav" version="18.0.0" type="github" pages="2">
   <diagram id="f9oOYvCmZmpLSwxa6qJj" name="Page-1">
     <mxGraphModel dx="1186" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-71" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="1820" width="565" height="130" as="geometry" />
+        </mxCell>
         <mxCell id="K7mHtKXPiXI5yzl_dxIU-5" value="Functional Requirements:&lt;br&gt;&lt;ul&gt;&lt;li&gt;One on One and group conversation (&amp;lt;= 100)&lt;/li&gt;&lt;li&gt;Track online / offline statusus of users&lt;/li&gt;&lt;li&gt;Support presistent storage of messages&lt;/li&gt;&lt;li&gt;Push notifications&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="320" y="30" width="260" height="200" as="geometry" />
         </mxCell>
@@ -143,20 +146,44 @@
         <mxCell id="iFM6vxmwz-QQAYS7bez4-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-53" target="iFM6vxmwz-QQAYS7bez4-58">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-53" target="iFM6vxmwz-QQAYS7bez4-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="iFM6vxmwz-QQAYS7bez4-53" value="API Servers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="1730" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-55" target="iFM6vxmwz-QQAYS7bez4-68">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="iFM6vxmwz-QQAYS7bez4-55" value="Notification Service" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="60" y="1725" width="70" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.823;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-57" target="iFM6vxmwz-QQAYS7bez4-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="iFM6vxmwz-QQAYS7bez4-57" value="Chat Servers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="1610" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.91;entryY=-0.023;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-58" target="iFM6vxmwz-QQAYS7bez4-71">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="iFM6vxmwz-QQAYS7bez4-58" value="Presence Servers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="510" y="1610" width="50" height="60" as="geometry" />
         </mxCell>
         <mxCell id="iFM6vxmwz-QQAYS7bez4-64" value="WebSocket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="390" y="1540" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-68" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="75" y="1840" width="55" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-69" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1850" width="55" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-70" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1840" width="55" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFM6vxmwz-QQAYS7bez4-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=37.5;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="iFM6vxmwz-QQAYS7bez4-68" target="iFM6vxmwz-QQAYS7bez4-68">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
